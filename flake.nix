@@ -15,7 +15,7 @@
     flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
       let
         python = "python38";
-        pkgs = nixpkgs.legacyPackages.${system};
+        pkgs = import nixpkgs { inherit system; };
         mach-nix-wrapper = import mach-nix { inherit pkgs python; };
         requirements = ''
           setuptools
@@ -31,7 +31,7 @@
           requirementsExtra = requirements;
           tests = true;
           checkPhase = ''
-            export HOME=/tmp
+            export HOME="$(mktemp -d)"
             python3 -m pytest ./tests/
           '';
         };
