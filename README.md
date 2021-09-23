@@ -25,7 +25,8 @@ deltabot can be run directly by
 
 should give the following 
 
-  ```usage: deltabot [-h] [--stdlog {info,debug,err,warn}] [--version] [--basedir DIR] [--show-ffi] {init,info,list-plugins,serve,add-module,del-  module,db_set,db_get,db_del,db_list} ...`
+  ```
+  usage: deltabot [-h] [--stdlog {info,debug,err,warn}] [--version] [--basedir DIR] [--show-ffi] {init,info,list-plugins,serve,add-module,del-  module,db_set,db_get,db_del,db_list} ...`
 
   The deltabot command line offers sub commands for initialization, configuration`
   and web-serving of Delta Chat Bots.  New sub commands may be added via plugins.`
