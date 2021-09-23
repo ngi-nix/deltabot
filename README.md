@@ -25,18 +25,19 @@ deltabot can be run directly by
 
 should give the following 
 
-`usage: deltabot [-h] [--stdlog {info,debug,err,warn}] [--version] [--basedir DIR] [--show-ffi] {init,info,list-plugins,serve,add-module,del-module,db_set,db_get,db_del,db_list} ...`
+```usage: deltabot [-h] [--stdlog {info,debug,err,warn}] [--version] [--basedir DIR] [--show-ffi] {init,info,list-plugins,serve,add-module,del-module,db_set,db_get,db_del,db_list} ...`
 
-`The deltabot command line offers sub commands for initialization, configuration`
-`and web-serving of Delta Chat Bots.  New sub commands may be added via plugins.`
+The deltabot command line offers sub commands for initialization, configuration`
+and web-serving of Delta Chat Bots.  New sub commands may be added via plugins.`
 
-`init                 initialize account with emailadr and password.`
-`info                 show information about configured account.`
-`list-plugins         list deltabot plugins.`
-`serve                serve and react to incoming messages`
-`add-module           add python module(s) paths to be loaded as bot plugin(s).`
-`del-module           Delete python module(s) plugin path from bot plugins.`
-`db_set               Set a low level setting.`
-`db_get               Get a low level setting.`
-`db_del               Delete a low level setting.`
-`db_list              List all key,values.`
+init                 initialize account with emailadr and password.`
+info                 show information about configured account.`
+list-plugins         list deltabot plugins.`
+serve                serve and react to incoming messages`
+add-module           add python module(s) paths to be loaded as bot plugin(s).`
+del-module           Delete python module(s) plugin path from bot plugins.`
+db_set               Set a low level setting.`
+db_get               Get a low level setting.`
+db_del               Delete a low level setting.`
+db_list              List all key,values.
+```
